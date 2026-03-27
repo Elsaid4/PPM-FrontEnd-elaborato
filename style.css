@@ -1,3 +1,47 @@
 [data-bs-theme="red"] {
     background-color: red;
 }
+
+body{
+    padding-top: 70px;
+    height: 5000px;
+}
+
+/* Hamburger to X animation */
+.navbar-toggler .navbar-toggler-icon {
+  background-image: none;
+  position: relative;
+  height: 2px;
+  width: 22px;
+  background: white; /* Color of the bars */
+  transition: all 0.3s;
+}
+
+.navbar-toggler .navbar-toggler-icon::before,
+.navbar-toggler .navbar-toggler-icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: white;
+  transition: all 0.3s;
+}
+
+.navbar-toggler .navbar-toggler-icon::before { top: -7px; }
+.navbar-toggler .navbar-toggler-icon::after { bottom: -7px; }
+
+/* When menu is open (collapsed class removed by JS) */
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  background: transparent;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::after {
+  transform: rotate(-45deg);
+  bottom: 0;
+}
