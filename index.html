@@ -10,22 +10,22 @@
 <body>  
     <header>
         <nav class="navbar fixed-top navbar-expand-lg p-0 navbar-red">
-            <div class="container-fluid" data-bs-theme="red">
-                <div class="container-xxl">
-                    <div class="row mx-xl-5">
-                        <div class="col-xl-1"></div>
-                        <div class="col-xl-10 col-lg-11 col-md-11 col-sm-12">
+            <div class="container-fluid">
+                <div class="container-fluid">
+                    <div class="row ms-2">
+                        <div class="col-xl-2"></div>
+                        <div class="col-xl-8 col-lg-11 col-md-11 col-sm-12">
                             <button class="navbar-toggler collapsed d-xl-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <a class="navbar-brand d-lg-none" href="#">
-                                <img src="Data/Images/logo-dailyrecord.png" width="160" height="70">
+                                <img src="Data/Images/logo-dailyrecord.png" width="160" height="80">
                             </a>
-                            <div class="collapse navbar-collapse navbar-red" id="navbarNav">
-                                <a class="navbar-brand d-none d-lg-block" href="#">
-                                    <img src="Data/Images/logo-dailyrecord.png" width="160" height="70">
-                                </a>
-                                <ul class="navbar-nav ml-3">
+                            <div class="collapse navbar-collapse navbar-red" id="navbarNav" style="justify-content: space-between;">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item d-none d-lg-block">
+                                        <img src="Data/Images/logo-dailyrecord.png" width="160" height="80">
+                                    </li>
                                     <li class="nav-item">
                                         <button class="btn" aria-current="page" style="height: 80px; font-size: 15px;" href="#">NEWS</button>
                                     </li>
@@ -41,12 +41,33 @@
                                     <li class="nav-item dropdown">
                                         <button class="btn my-dropdown" id="moreButton" style="height: 80px; font-size: 15px;" type="button" aria-haspopup="true" aria-expanded="false">
                                             MORE
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: scaleY(1);" data-testid="arrow-head-icon" id="arrow">
+                                                <g clip-path="url(#clip0_7405_3605)"><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </g>    
+                                            </svg>
                                         </button>
                                     </li>
                                 </ul>
+                                <ul class="navbar-nav ml-auto d-flex align-items-center">
+                                    <li>
+                                        <a class="navbar-brand d-none d-lg-block" href="#">
+                                            <img src="Data/Images/premium-subscribe-dailyrecord.svg" width="150" height="48.45">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity=".1" d="M24.7499 24.7499H15.2499C12.3813 24.7499 9.95815 26.6571 9.1792 29.2726C11.7927 32.3196 15.6709 34.25 19.9999 34.25C24.329 34.25 28.2072 32.3196 30.8207 29.2726C30.0417 26.6571 27.6185 24.7499 24.7499 24.7499Z" fill="white"></path>
+                                            <path d="M34.25 20C34.25 22.9401 33.3596 25.6723 31.8337 27.9415C29.2751 31.7465 24.9299 34.25 20 34.25C15.0701 34.25 10.7249 31.7465 8.16631 27.9415C6.64042 25.6723 5.75 22.9401 5.75 20C5.75 12.1299 12.1299 5.75 20 5.75C27.8701 5.75 34.25 12.1299 34.25 20Z" stroke="white" stroke-width="3.16667"></path>
+                                            <path d="M23.1667 15.25C23.1667 16.9989 21.7489 18.4167 20 18.4167C18.2511 18.4167 16.8334 16.9989 16.8334 15.25C16.8334 13.5011 18.2511 12.0833 20 12.0833C21.7489 12.0833 23.1667 13.5011 23.1667 15.25Z" stroke="white" stroke-width="3.16667"></path>
+                                            <path d="M24.7499 24.7499H15.2499C12.3813 24.7499 9.95815 26.6571 9.1792 29.2726C11.7927 32.3196 15.6709 34.25 19.9999 34.25C24.329 34.25 28.2072 32.3196 30.8207 29.2726C30.0417 26.6571 27.6185 24.7499 24.7499 24.7499Z" stroke="white" stroke-width="3.16667"></path>
+                                        </svg>
+                                    </li>
+                                </ul>                          
+                                
                             </div>
                         </div>
-                        <div class="col-xl-1 col-lg-1"></div>
+                        <div class="col-xl-2"></div>
                     </div>
                 </div>
             </div>
@@ -54,12 +75,12 @@
     </header>
 
     <div class="container-fluid">
-        <div class="row mx-xl-5">
-            <div class="col-1"></div>
-            <div class="col-10 my-dropdown-col">
-                  <div id="my-dropdownmenu" class="my-dropdown-menu" aria-hidden="true">
+        <div class="row">
+            <div class="col-xl-2"></div>
+            <div class="col-xl-8 col-lg-11 col-md-11 col-sm-12 my-dropdown-col">
+                <div id="my-dropdownmenu" class="my-dropdown-menu" aria-hidden="true">
                     <div class="my-dropdown-backdrop"></div>
-                    <div class="my-dropdown-panel">
+                    <div class="my-dropdown-panel" style="max-height: 50vh;">
                         <button class="my-dropdown-close" id="closeDropdown" aria-label="Chiudi">✕</button>
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
@@ -74,21 +95,19 @@
                     </div>
                 </div>
             </div>
-            <div class="col-1"></div>
+            <div class="col-xl-2 col-lg-1"></div>
         </div>
     </div>
 
 
     
-    <main class="">
-        <div class="container-xxl" >
-            <div class="row mx-xl-5">
-                <div class="col-xl-1" style="background-color: blue;"></div>
-                <div class="col-xl-10 col-lg-11 col-md-11 col-sm-12">
-                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur soluta, nisi cumque ea, itaque repudiandae iusto delectus hic repellat vero maiores impedit sapiente quibusdam cum fugiat saepe dicta ratione!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur soluta, nisi cumque ea, itaque repudiandae iusto delectus hic repellat vero maiores impedit sapiente quibusdam cum fugiat saepe dicta ratione!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur soluta, nisi cumque ea, itaque repudiandae iusto delectus hic repellat vero maiores impedit sapiente quibusdam cum fugiat saepe dicta ratione!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur soluta, nisi cumque ea, itaque repudiandae iusto delectus hic repellat vero maiores impedit sapiente quibusdam cum fugiat saepe dicta ratione!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur soluta, nisi cumque ea, itaque repudiandae iusto delectus hic repellat vero maiores impedit sapiente quibusdam cum fugiat saepe dicta ratione!</h1>
-                </div>
-                <div class="col-xl-1 col-lg-1" style="background-color: black;"></div>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-xl-2"></div>
+            <div class="col-xl-8 col-lg-11 col-md-11 col-sm-12">
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur soluta, nisi cumque ea, itaque repudiandae iusto delectus hic repellat vero maiores impedit sapiente quibusdam cum fugiat saepe dicta ratione!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur soluta, nisi cumque ea, itaque repudiandae iusto delectus hic repellat vero maiores impedit sapiente quibusdam cum fugiat saepe dicta ratione!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur soluta, nisi cumque ea, itaque repudiandae iusto delectus hic repellat vero maiores impedit sapiente quibusdam cum fugiat saepe dicta ratione!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur soluta, nisi cumque ea, itaque repudiandae iusto delectus hic repellat vero maiores impedit sapiente quibusdam cum fugiat saepe dicta ratione!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur soluta, nisi cumque ea, itaque repudiandae iusto delectus hic repellat vero maiores impedit sapiente quibusdam cum fugiat saepe dicta ratione!</h1>
             </div>
+            <div class="col-xl-2 col-lg-1"></div>
         </div>
     </main>
     

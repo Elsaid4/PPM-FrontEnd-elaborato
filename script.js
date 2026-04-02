@@ -16,6 +16,8 @@ function openDropdown() {
     window.addEventListener('wheel', preventDefault, { passive: false });
     window.addEventListener('touchmove', preventDefault, { passive: false });
 
+    document.getElementById('arrow').style.transform = 'scaleY(-1)';
+
 }
 
 function closeDropdown() {
@@ -24,6 +26,9 @@ function closeDropdown() {
 
     // Restore main page scroll
     window.removeEventListener('wheel', preventDefault);
+    window.removeEventListener('touchmove', preventDefault);
+
+    document.getElementById('arrow').style.transform = 'scaleY(1)';
 }
 
 trigger.addEventListener('click', function (event) {

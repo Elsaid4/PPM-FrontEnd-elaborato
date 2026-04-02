@@ -99,6 +99,7 @@ body{
   padding: 1.2rem;
   box-shadow: none;
   overflow-y: auto;
+  scrollbar-gutter: stable;
   z-index: 1;
 }
 
