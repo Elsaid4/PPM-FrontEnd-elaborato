@@ -230,3 +230,36 @@ body{
 .size-20{
   font-size: 20px;
 }
+
+
+/* Stile base per il contenitore */
+.custom-nav-container {
+    height: 30px;
+    background-color: #FAFAFA;
+    overflow-x: auto; /* Permette lo scroll orizzontale */
+    overflow-y: hidden;
+    white-space: nowrap; /* Impedisce agli elementi di andare a capo */
+    -webkit-overflow-scrolling: touch; /* Rende lo scroll fluido su mobile */
+}
+
+/* Nasconde la scrollbar se vuoi un look più pulito (opzionale) */
+.custom-nav-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Gestione Breakpoint MD e inferiori */
+@media (max-width: 991.98px) {
+    .btn-secondario {
+        font-size: 13px; /* Riduce il font */
+        padding: 2px 5px; /* Riduce il padding se necessario */
+    }
+    
+    .navbar-nav {
+        flex-direction: row !important; /* Forza l'orizzontalità */
+        flex-wrap: nowrap;
+    }
+
+    .nav-item {
+        padding: 0 10px; /* Spaziatura minima tra i bottoni */
+    }
+}
