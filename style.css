@@ -64,11 +64,17 @@ body{
   background-color: transparent;
   border-radius: 0;
   height: 80px;
-  font-size: 14px;;
+  font-size: 14px;
+  transition: background-color 0.3s;
 }
 .btn:hover{
   color: white;
   background-color: #A1001F;
+}
+
+.btn.is-open {
+  background-color: white !important; /* L'important assicura che vinca sull'hover */
+  color: red !important;
 }
 
 .btn-secondario{
@@ -81,8 +87,21 @@ body{
   color: #252626;
   border-color: transparent;
   text-decoration: underline;
-  /* make mouse cursor change on hover */
   cursor:grab;
+}
+
+.btn-round{
+  color: white;
+  background-color: #ED002D;
+  border-radius: 36px;
+  border-color: transparent;
+  width: 36px;
+  height: 36px;
+}
+.btn-round:hover{
+  color: white;
+  background-color: black;
+  border-color: transparent;
 }
 
 /* Custom "my-dropdownmenu" overlay */
@@ -139,12 +158,33 @@ body{
 }
 
 .my-dropdown-close {
-  position: absolute;
+  /* position: absolute; */
   top: .5rem;
   right: .5rem;
   background: transparent;
   border: 0;
   color: #000000;
-  font-size: 1.2rem;
+  font-size: 20px;
+  white-space: nowrap;
 }
 
+.my-dropdown-content{
+  text-decoration: none;
+  color:black;
+}
+  
+.my-dropdown-head{
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.my-dropdown-item{
+  font-size: 14px;
+  padding: 10px 0 0 0;
+  white-space: nowrap;
+}
+
+.my-dropdown-ul{
+  list-style: none;
+}

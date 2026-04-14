@@ -18,6 +18,8 @@ function openDropdown() {
 
     document.getElementById('arrow').style.transform = 'scaleY(-1)';
 
+    trigger.classList.add('is-open');
+
 }
 
 function closeDropdown() {
@@ -29,6 +31,9 @@ function closeDropdown() {
     // window.removeEventListener('touchmove', preventDefault);
 
     document.getElementById('arrow').style.transform = 'scaleY(1)';
+
+    trigger.classList.remove('is-open');
+
 }
 
 trigger.addEventListener('click', function (event) {
