@@ -104,6 +104,20 @@ body{
   border-color: transparent;
 }
 
+.btn-round-footer{
+  color: black;
+  background-color: white;
+  border-radius: 36px;
+  border-color: transparent;
+  width: 36px;
+  height: 36px;
+}
+.btn-round-footer:hover{
+  color: white;
+  background-color: #3D3F40;
+  border-color: transparent;
+}
+
 /* Custom "my-dropdownmenu" overlay */
 .my-dropdown-col {
   position: relative;
@@ -185,6 +199,34 @@ body{
   white-space: nowrap;
 }
 
-.my-dropdown-ul{
+.my-ul{
   list-style: none;
+}
+
+.my-footer{
+  background-color: #111211;
+}
+
+.my-footer-content{
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.my-footer-content:hover{
+  text-decoration: underline;
+}
+.footer-item {
+  border-right: 1px solid #ccc; 
+  padding: 0 15px;
+  margin-bottom: 10px;
+}
+
+.footer-item-last-child {
+  border-right: none; 
+}
+
+
+.size-20{
+  font-size: 20px;
 }
