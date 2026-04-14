@@ -5,7 +5,7 @@
 
 body{
     padding-top: 80px;
-    height: 5000px;
+    /* height: 5000px; */
     /* take font from folder*/
     font-family: 'Myriad', sans-serif;
 }
@@ -13,6 +13,10 @@ body{
 
 .navbar-red{
     background-color: #ED002D;
+}
+
+.navbar-secondary{
+    background-color: #FAFAFA;
 }
 
 /* Hamburger to X animation */
@@ -59,10 +63,26 @@ body{
   color: white;
   background-color: transparent;
   border-radius: 0;
+  height: 80px;
+  font-size: 14px;;
 }
 .btn:hover{
   color: white;
   background-color: #A1001F;
+}
+
+.btn-secondario{
+  color: #252626;
+  background-color: transparent;
+  border-color: transparent;
+  font-size: 14px;;
+}
+.btn-secondario:hover{
+  color: #252626;
+  border-color: transparent;
+  text-decoration: underline;
+  /* make mouse cursor change on hover */
+  cursor:grab;
 }
 
 /* Custom "my-dropdownmenu" overlay */

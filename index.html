@@ -9,6 +9,7 @@
 </head>
 <body>  
     <header>
+        <!-- Navbar principale -->
         <nav class="navbar fixed-top navbar-expand-lg p-0 navbar-red">
             <div class="container-fluid">
                 <div class="container-fluid">
@@ -23,23 +24,23 @@
                             </a>
                             <div class="collapse navbar-collapse navbar-red" id="navbarNav" style="justify-content: space-between;">
                                 <ul class="navbar-nav">
-                                    <li class="nav-item d-none d-lg-block">
+                                    <li class="nav-item d-none d-lg-block me-4">
                                         <img src="Data/Images/logo-dailyrecord.png" width="160" height="80">
                                     </li>
                                     <li class="nav-item">
-                                        <button class="btn" aria-current="page" style="height: 80px; font-size: 15px;" href="#">NEWS</button>
+                                        <button class="btn" aria-current="page" href="#">NEWS</button>
                                     </li>
                                     <li class="nav-item">
-                                        <button class="btn" aria-current="page" style="height: 80px;  font-size: 15px;" href="#">FOOTBALL</button>
+                                        <button class="btn" aria-current="page" href="#">FOOTBALL</button>
                                     </li>
                                     <li class="nav-item">
-                                        <button class="btn" aria-current="page" style="height: 80px; font-size: 15px;" href="#">TV & CELEBS</button>
+                                        <button class="btn" aria-current="page" href="#">TV & CELEBS</button>
                                     </li>
                                     <li class="nav-item">
-                                        <button class="btn" aria-current="page" style="height: 80px; font-size: 15px;" href="#">LIFE</button>
+                                        <button class="btn" aria-current="page" href="#">LIFE</button>
                                     </li>
                                     <li class="nav-item dropdown">
-                                        <button class="btn my-dropdown" id="moreButton" style="height: 80px; font-size: 15px;" type="button" aria-haspopup="true" aria-expanded="false">
+                                        <button class="btn my-dropdown" id="moreButton" type="button" aria-haspopup="true" aria-expanded="false">
                                             MORE
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: scaleY(1);" data-testid="arrow-head-icon" id="arrow">
                                                 <g clip-path="url(#clip0_7405_3605)"><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -56,17 +57,72 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path opacity=".1" d="M24.7499 24.7499H15.2499C12.3813 24.7499 9.95815 26.6571 9.1792 29.2726C11.7927 32.3196 15.6709 34.25 19.9999 34.25C24.329 34.25 28.2072 32.3196 30.8207 29.2726C30.0417 26.6571 27.6185 24.7499 24.7499 24.7499Z" fill="white"></path>
-                                            <path d="M34.25 20C34.25 22.9401 33.3596 25.6723 31.8337 27.9415C29.2751 31.7465 24.9299 34.25 20 34.25C15.0701 34.25 10.7249 31.7465 8.16631 27.9415C6.64042 25.6723 5.75 22.9401 5.75 20C5.75 12.1299 12.1299 5.75 20 5.75C27.8701 5.75 34.25 12.1299 34.25 20Z" stroke="white" stroke-width="3.16667"></path>
-                                            <path d="M23.1667 15.25C23.1667 16.9989 21.7489 18.4167 20 18.4167C18.2511 18.4167 16.8334 16.9989 16.8334 15.25C16.8334 13.5011 18.2511 12.0833 20 12.0833C21.7489 12.0833 23.1667 13.5011 23.1667 15.25Z" stroke="white" stroke-width="3.16667"></path>
-                                            <path d="M24.7499 24.7499H15.2499C12.3813 24.7499 9.95815 26.6571 9.1792 29.2726C11.7927 32.3196 15.6709 34.25 19.9999 34.25C24.329 34.25 28.2072 32.3196 30.8207 29.2726C30.0417 26.6571 27.6185 24.7499 24.7499 24.7499Z" stroke="white" stroke-width="3.16667"></path>
-                                        </svg>
+                                        <a class="navbar-brand d-none d-lg-block" href="#">
+                                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path opacity=".1" d="M24.7499 24.7499H15.2499C12.3813 24.7499 9.95815 26.6571 9.1792 29.2726C11.7927 32.3196 15.6709 34.25 19.9999 34.25C24.329 34.25 28.2072 32.3196 30.8207 29.2726C30.0417 26.6571 27.6185 24.7499 24.7499 24.7499Z" fill="white"></path>
+                                                <path d="M34.25 20C34.25 22.9401 33.3596 25.6723 31.8337 27.9415C29.2751 31.7465 24.9299 34.25 20 34.25C15.0701 34.25 10.7249 31.7465 8.16631 27.9415C6.64042 25.6723 5.75 22.9401 5.75 20C5.75 12.1299 12.1299 5.75 20 5.75C27.8701 5.75 34.25 12.1299 34.25 20Z" stroke="white" stroke-width="3.16667"></path>
+                                                <path d="M23.1667 15.25C23.1667 16.9989 21.7489 18.4167 20 18.4167C18.2511 18.4167 16.8334 16.9989 16.8334 15.25C16.8334 13.5011 18.2511 12.0833 20 12.0833C21.7489 12.0833 23.1667 13.5011 23.1667 15.25Z" stroke="white" stroke-width="3.16667"></path>
+                                                <path d="M24.7499 24.7499H15.2499C12.3813 24.7499 9.95815 26.6571 9.1792 29.2726C11.7927 32.3196 15.6709 34.25 19.9999 34.25C24.329 34.25 28.2072 32.3196 30.8207 29.2726C30.0417 26.6571 27.6185 24.7499 24.7499 24.7499Z" stroke="white" stroke-width="3.16667"></path>
+                                            </svg>
+                                        </a>
                                     </li>
                                 </ul>                          
                                 
                             </div>
                         </div>
+                        <div class="col-xl-2"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Sottomenu con opzioni aggiuntive -->
+        <nav class="navbar fixed-top navbar-expand-lg p-0" style="top: 80px;">
+            <div class="container-fluid">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-xl-2"></div>
+                        <div class="col-xl-8 col-lg-11 col-md-11 col-sm-12" style="height: 30px; background-color: #FAFAFA;">
+                            <ul class="navbar-nav d-flex align-items-center justify-content-between p-1">
+                                <li class="nav-item">
+                                    <button href="#" class="btn-secondario">BUY A PAPER</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button href="#" class="btn-secondario">ROAD RECORD</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button href="#" class="btn-secondario">PROPERTY</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button href="#" class="btn-secondario">NEWSLETTER SIGNUP</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button href="#" class="btn-secondario">COMPETITIONS</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button href="#" class="btn-secondario">CROSSWORD</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button href="#" class="btn-secondario">HOROSCOPES</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button href="#" class="btn-secondario">DEALS</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-2"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Parte bianca tra contenuto e navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg p-0" style="top: 110px;">
+            <div class="container-fluid">
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-xl-2"></div>
+                        <div class="col-xl-8 col-lg-11 col-md-11 col-sm-12" style="height: 30px; background-color: white;"></div>
                         <div class="col-xl-2"></div>
                     </div>
                 </div>
@@ -101,13 +157,13 @@
 
 
     
-    <main class="container-fluid">
+    <main class="container-fluid mt-5">
         <div class="row">
-            <div class="col-xl-2"></div>
-            <div class="col-xl-8 col-lg-11 col-md-11 col-sm-12">
+            <div class="col-xl-2" style="border-right: 1px solid #D4D5D5; top: -110px; position: relative;"></div>
+            <div class="col-xl-8 col-lg-11 col-md-11 col-sm-12 mt-3" style="padding: 0px 20px 20px 20px; height: 5000px;">
                 <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur soluta, nisi cumque ea, itaque repudiandae iusto delectus hic repellat vero maiores impedit sapiente quibusdam cum fugiat saepe dicta ratione!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur soluta, nisi cumque ea, itaque repudiandae iusto delectus hic repellat vero maiores impedit sapiente quibusdam cum fugiat saepe dicta ratione!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur soluta, nisi cumque ea, itaque repudiandae iusto delectus hic repellat vero maiores impedit sapiente quibusdam cum fugiat saepe dicta ratione!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur soluta, nisi cumque ea, itaque repudiandae iusto delectus hic repellat vero maiores impedit sapiente quibusdam cum fugiat saepe dicta ratione!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur soluta, nisi cumque ea, itaque repudiandae iusto delectus hic repellat vero maiores impedit sapiente quibusdam cum fugiat saepe dicta ratione!</h1>
             </div>
-            <div class="col-xl-2 col-lg-1"></div>
+            <div class="col-xl-2 col-lg-1" style="border-left: 1px solid #D4D5D5; top: -110px; position: relative;"></div>
         </div>
     </main>
     
