@@ -82,6 +82,7 @@ offcanvas.addEventListener('show.bs.collapse', function () {
     document.getElementById('sotto-menu').style.display = 'none';
     document.getElementById('white-space').style.display = 'none';
     myoffcanvas.classList.add('bg-white');
+    myoffcanvas.classList.remove('d-none');
 });
 offcanvas.addEventListener('hide.bs.collapse', function () {
     document.getElementById('sotto-menu').style.display = 'block';
@@ -89,6 +90,9 @@ offcanvas.addEventListener('hide.bs.collapse', function () {
     myoffcanvas.classList.remove('bg-white');
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    myoffcanvas.classList.add('d-none');
+});
 
 // Gestione del menu "more news" (da implementare meglio)
 moreNewsBtn.addEventListener('click', function (event) {
