@@ -16,58 +16,204 @@
                     <div class="row ms-2">
                         <div class="col-xl-2"></div>
                         <div class="col-xl-8 col-lg-11 col-md-11 col-sm-12">
-                            <button class="navbar-toggler collapsed d-xl-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <a class="navbar-brand d-lg-none" href="#">
-                                <img src="Data/Images/logo-dailyrecord.png" width="160" height="80">
-                            </a>
-                            <div class="collapse navbar-collapse navbar-red" id="navbarNav" style="justify-content: space-between;">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item d-none d-lg-block me-4">
+                            <ul class="navbar-nav d-flex align-items-center d-md-flex d-lg-none">
+                                <li class="me-1">
+                                    <button class="navbar-toggler collapsed d-xl-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <a class="navbar-brand" href="#">
                                         <img src="Data/Images/logo-dailyrecord.png" width="160" height="80">
-                                    </li>
-                                    <li class="nav-item">
-                                        <button class="btn" aria-current="page" href="#">NEWS</button>
-                                    </li>
-                                    <li class="nav-item">
-                                        <button class="btn" aria-current="page" href="#">FOOTBALL</button>
-                                    </li>
-                                    <li class="nav-item">
-                                        <button class="btn" aria-current="page" href="#">TV & CELEBS</button>
-                                    </li>
-                                    <li class="nav-item">
-                                        <button class="btn" aria-current="page" href="#">LIFE</button>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <button class="btn my-dropdown" id="moreButton" type="button" aria-haspopup="true" aria-expanded="false">
-                                            MORE
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: scaleY(1);" data-testid="arrow-head-icon" id="arrow">
-                                                <g clip-path="url(#clip0_7405_3605)"><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </g>    
-                                            </svg>
-                                        </button>
-                                    </li>
-                                </ul>
-                                <ul class="navbar-nav ml-auto d-flex align-items-center">
-                                    <li>
-                                        <a class="navbar-brand d-none d-lg-block" href="#">
-                                            <img src="Data/Images/premium-subscribe-dailyrecord.svg" width="150" height="48.45">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="navbar-brand d-none d-lg-block" href="#">
-                                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path opacity=".1" d="M24.7499 24.7499H15.2499C12.3813 24.7499 9.95815 26.6571 9.1792 29.2726C11.7927 32.3196 15.6709 34.25 19.9999 34.25C24.329 34.25 28.2072 32.3196 30.8207 29.2726C30.0417 26.6571 27.6185 24.7499 24.7499 24.7499Z" fill="white"></path>
-                                                <path d="M34.25 20C34.25 22.9401 33.3596 25.6723 31.8337 27.9415C29.2751 31.7465 24.9299 34.25 20 34.25C15.0701 34.25 10.7249 31.7465 8.16631 27.9415C6.64042 25.6723 5.75 22.9401 5.75 20C5.75 12.1299 12.1299 5.75 20 5.75C27.8701 5.75 34.25 12.1299 34.25 20Z" stroke="white" stroke-width="3.16667"></path>
-                                                <path d="M23.1667 15.25C23.1667 16.9989 21.7489 18.4167 20 18.4167C18.2511 18.4167 16.8334 16.9989 16.8334 15.25C16.8334 13.5011 18.2511 12.0833 20 12.0833C21.7489 12.0833 23.1667 13.5011 23.1667 15.25Z" stroke="white" stroke-width="3.16667"></path>
-                                                <path d="M24.7499 24.7499H15.2499C12.3813 24.7499 9.95815 26.6571 9.1792 29.2726C11.7927 32.3196 15.6709 34.25 19.9999 34.25C24.329 34.25 28.2072 32.3196 30.8207 29.2726C30.0417 26.6571 27.6185 24.7499 24.7499 24.7499Z" stroke="white" stroke-width="3.16667"></path>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>                          
-                                
+                                    </a>
+                                </li>
+                                <li class="ms-auto">
+                                    <a class="navbar-brand" href="#">
+                                        <img src="Data/Images/premium-subscribe-dailyrecord.svg" width="150" height="48.45">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="navbar-brand" href="#">
+                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity=".1" d="M24.7499 24.7499H15.2499C12.3813 24.7499 9.95815 26.6571 9.1792 29.2726C11.7927 32.3196 15.6709 34.25 19.9999 34.25C24.329 34.25 28.2072 32.3196 30.8207 29.2726C30.0417 26.6571 27.6185 24.7499 24.7499 24.7499Z" fill="white"></path>
+                                            <path d="M34.25 20C34.25 22.9401 33.3596 25.6723 31.8337 27.9415C29.2751 31.7465 24.9299 34.25 20 34.25C15.0701 34.25 10.7249 31.7465 8.16631 27.9415C6.64042 25.6723 5.75 22.9401 5.75 20C5.75 12.1299 12.1299 5.75 20 5.75C27.8701 5.75 34.25 12.1299 34.25 20Z" stroke="white" stroke-width="3.16667"></path>
+                                            <path d="M23.1667 15.25C23.1667 16.9989 21.7489 18.4167 20 18.4167C18.2511 18.4167 16.8334 16.9989 16.8334 15.25C16.8334 13.5011 18.2511 12.0833 20 12.0833C21.7489 12.0833 23.1667 13.5011 23.1667 15.25Z" stroke="white" stroke-width="3.16667"></path>
+                                            <path d="M24.7499 24.7499H15.2499C12.3813 24.7499 9.95815 26.6571 9.1792 29.2726C11.7927 32.3196 15.6709 34.25 19.9999 34.25C24.329 34.25 28.2072 32.3196 30.8207 29.2726C30.0417 26.6571 27.6185 24.7499 24.7499 24.7499Z" stroke="white" stroke-width="3.16667"></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="d-flex justify-content-between">
+
+                            <ul class="navbar-nav d-md-none d-lg-flex">
+                                <li class="nav-item d-none d-lg-block me-4">
+                                    <img src="Data/Images/logo-dailyrecord.png" width="160" height="80">
+                                </li>
+                                <li class="nav-item">
+                                    <button class="btn" aria-current="page" href="#">NEWS</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="btn" aria-current="page" href="#">FOOTBALL</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="btn" aria-current="page" href="#">TV & CELEBS</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="btn" aria-current="page" href="#">LIFE</button>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <button class="btn my-dropdown" id="moreButton" type="button" aria-haspopup="true" aria-expanded="false">
+                                        MORE
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: scaleY(1);" data-testid="arrow-head-icon" id="arrow">
+                                            <g clip-path="url(#clip0_7405_3605)"><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </g>    
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav ml-auto d-flex align-items-center d-md-none d-lg-flex">
+                                <li>
+                                    <a class="navbar-brand" href="#">
+                                        <img src="Data/Images/premium-subscribe-dailyrecord.svg" width="150" height="48.45">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="navbar-brand" href="#">
+                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity=".1" d="M24.7499 24.7499H15.2499C12.3813 24.7499 9.95815 26.6571 9.1792 29.2726C11.7927 32.3196 15.6709 34.25 19.9999 34.25C24.329 34.25 28.2072 32.3196 30.8207 29.2726C30.0417 26.6571 27.6185 24.7499 24.7499 24.7499Z" fill="white"></path>
+                                            <path d="M34.25 20C34.25 22.9401 33.3596 25.6723 31.8337 27.9415C29.2751 31.7465 24.9299 34.25 20 34.25C15.0701 34.25 10.7249 31.7465 8.16631 27.9415C6.64042 25.6723 5.75 22.9401 5.75 20C5.75 12.1299 12.1299 5.75 20 5.75C27.8701 5.75 34.25 12.1299 34.25 20Z" stroke="white" stroke-width="3.16667"></path>
+                                            <path d="M23.1667 15.25C23.1667 16.9989 21.7489 18.4167 20 18.4167C18.2511 18.4167 16.8334 16.9989 16.8334 15.25C16.8334 13.5011 18.2511 12.0833 20 12.0833C21.7489 12.0833 23.1667 13.5011 23.1667 15.25Z" stroke="white" stroke-width="3.16667"></path>
+                                            <path d="M24.7499 24.7499H15.2499C12.3813 24.7499 9.95815 26.6571 9.1792 29.2726C11.7927 32.3196 15.6709 34.25 19.9999 34.25C24.329 34.25 28.2072 32.3196 30.8207 29.2726C30.0417 26.6571 27.6185 24.7499 24.7499 24.7499Z" stroke="white" stroke-width="3.16667"></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                            </div>
+
+                            <div class="offcanvas offcanvas-start navbar-red" id="navbarNav" tabindex="-1" aria-labelledby="navbarNavLabel" data-bs-backdrop="false" style="z-index: 9999; top: 80px; width: 90%;">
+                                <div class="offcanvas-body justify-content-between p-0 pt-4" id="my-offcanvas">
+                                    <ul class="my-ul m-0 p-0">
+                                        <li class="my-li p-2 ps-3 justify-content-between d-flex align-items-center flex-wrap">
+                                            <a class="my-dropdown-content my-dropdown-head size-18" href="#">NEWS<svg width="24" height="24" viewBox="-5 -4 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle;"><path d="M8 15L15 8L8 1M15 8L1 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+                                            <button class="btn-plus" type="button" id="more-news">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" id="btn-more-news-plus" fill="red" class="bi bi-plus" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" id="btn-more-news-minus" style="display: none;" fill="red" class="bi bi-dash" viewBox="0 0 16 16"><path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/></svg>
+                                            </button>
+                                        </li>
+                                        <li class="my-li">
+                                            <ul class="my-ul p-2" id="more-news-ul" style="display: none;">
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">SCOTTISH NEWS</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">UK & WORLD NEWS</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">CRIME</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">POLITICS</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">MONEY</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">HEALTH</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">WEATHER</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">REAL LIFE</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">WEIRD NEWS</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">BUSINESS & CONSUMER</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">SCIENCE & TECHNOLOGY</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">ENVIRONMENT</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">NEWS BY AREA</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="my-li p-2 ps-3 justify-content-between d-flex align-items-center">
+                                            <a class="my-dropdown-content my-dropdown-head size-18" href="#">SPORT<svg width="24" height="24" viewBox="-5 -4 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle;"><path d="M8 15L15 8L8 1M15 8L1 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+                                            <button class="btn-plus" type="button" id="more-sport">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" id="btn-more-sport-plus" fill="red" class="bi bi-plus" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" id="btn-more-sport-minus" style="display: none;" fill="red" class="bi bi-dash" viewBox="0 0 16 16"><path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/></svg>
+                                            </button>
+                                        </li>
+                                        <li class="my-li">
+                                            <ul class="my-ul p-2" id="more-sport-ul" style="display: none;">
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">FOOTBALL</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">SCOTTISH PREMIERSHIP</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">SCOTTISH CHAMPIONSHIP</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">TRANSFER NEWS</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">SCOTLAND FOOTBALL TEAM</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">SCOTTISH CUP</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">HORSE RACING</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">RUGBY</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">GOLF</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">TENNIS</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">BOXING</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">DARTS</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">SNOOKER</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="my-li p-2 ps-3 justify-content-between d-flex align-items-center">
+                                            <a class="my-dropdown-content my-dropdown-head size-18" href="#">TV & CELEBS<svg width="24" height="24" viewBox="-5 -4 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle;"><path d="M8 15L15 8L8 1M15 8L1 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+                                            <button class="btn-plus" type="button" id="more-tv">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" id="btn-more-tv-plus" fill="red" class="bi bi-plus" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" id="btn-more-tv-minus" style="display: none;" fill="red" class="bi bi-dash" viewBox="0 0 16 16"><path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/></svg>
+                                            </button>
+                                        </li>
+                                        <li class="my-li">
+                                            <ul class="my-ul p-2" id="more-tv-ul" style="display: none;">
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">LATEST CELEBS</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">CELEBRITY NEWS</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">TV & RADIO NEWS</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">OUTLANDER</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">CELEBRITY INTERVIEWS</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="my-li p-2 ps-3 justify-content-between d-flex align-items-center">
+                                            <a class="my-dropdown-content my-dropdown-head size-18" href="#">SCOTLAND NOW<svg width="24" height="24" viewBox="-5 -4 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle;"><path d="M8 15L15 8L8 1M15 8L1 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+                                        </li>
+                                        <li class="my-li p-2 ps-3 justify-content-between d-flex align-items-center">
+                                            <a class="my-dropdown-content my-dropdown-head size-18" href="#">IN YOUR AREA<svg width="24" height="24" viewBox="-5 -4 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle;"><path d="M8 15L15 8L8 1M15 8L1 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+                                        </li>
+                                        <li class="my-li p-2 ps-3 justify-content-between d-flex align-items-center">
+                                            <a class="my-dropdown-content my-dropdown-head size-18" href="#">ONLINEGAMES<svg width="24" height="24" viewBox="-5 -4 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle;"><path d="M8 15L15 8L8 1M15 8L1 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+                                            <button class="btn-plus" type="button" id="more-games">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" id="btn-more-games-plus" fill="red" class="bi bi-plus" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" id="btn-more-games-minus" style="display: none;" fill="red" class="bi bi-dash" viewBox="0 0 16 16"><path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/></svg>
+                                            </button>
+                                        </li>
+                                        <li class="my-li">
+                                            <ul class="my-ul p-2" id="more-games-ul" style="display: none;">
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">SOLITAIRE</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">SUDOKU</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">MAHJONG</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">BUBBLE SHOOTER</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="my-li p-2 ps-3 justify-content-between d-flex align-items-center">
+                                            <a class="my-dropdown-content my-dropdown-head size-18" href="#">LIFE<svg width="24" height="24" viewBox="-5 -4 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle;"><path d="M8 15L15 8L8 1M15 8L1 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+                                            <button class="btn-plus" type="button" id="more-life">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" id="btn-more-life-plus" fill="red" class="bi bi-plus" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" id="btn-more-life-minus" style="display: none;" fill="red" class="bi bi-dash" viewBox="0 0 16 16"><path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/></svg>
+                                            </button>
+                                        </li>
+                                        <li class="my-li">
+                                            <ul class="my-ul p-2" id="more-life-ul" style="display: none;">
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">TRAVEL</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">SHOPPING</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">HOROSCOPES</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">MOTORING</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">PROPERTY</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">COMPETITIONS</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">BUSINESS</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">PARTNER STORIES</a></li>
+                                                <li class="p-2 ps-4 size-11"><a class="my-offcanvas-content" href="#">LEGAL MATTERS</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="my-li p-3 ps-3 size-11" style="text-align: center;"><a class="my-offcanvas-content" href="#">BUY A PAPER</a></li>
+                                        <li class="my-li p-3 ps-3 size-11" style="text-align: center;"><a class="my-offcanvas-content" href="#">ROAD RECORD</a></li>
+                                        <li class="my-li p-3 ps-3 size-11" style="text-align: center;"><a class="my-offcanvas-content" href="#">PROPERTY</a></li>
+                                        <li class="my-li p-3 ps-3 size-11" style="text-align: center;"><a class="my-offcanvas-content" href="#">NEWSLETTER SIGNUP</a></li>
+                                        <li class="my-li p-3 ps-3 size-11" style="text-align: center;"><a class="my-offcanvas-content" href="#">COMPETITIONS</a></li>
+                                        <li class="my-li p-3 ps-3 size-11" style="text-align: center;"><a class="my-offcanvas-content" href="#">CROSSWORDS</a></li>
+                                        <li class="my-li p-3 ps-3 size-11" style="text-align: center;"><a class="my-offcanvas-content" href="#">HOROSCOPES</a></li>
+                                        <li class="my-li p-3 ps-3 size-11" style="text-align: center;"><a class="my-offcanvas-content" href="#">DEALS</a></li>
+                                        <li class="my-li p-3 ps-3 size-11" style="text-align: center;"><a class="my-offcanvas-content" href="#">FUNERAL NOTICES</a></li>
+                                        <li class="my-li p-3 ps-3 size-11" style="text-align: center;"><a class="my-offcanvas-content" href="#">JOBS</a></li>
+
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="col-xl-2"></div>
@@ -76,8 +222,9 @@
             </div>
         </nav>
 
+
         <!-- Sottomenu con opzioni aggiuntive -->
-        <nav class="navbar fixed-top navbar-expand p-0" style="top: 80px;">
+        <nav class="navbar fixed-top navbar-expand p-0" id="sotto-menu" style="top: 80px;">
             <div class="container-fluid">
                 <div class="container-fluid p-0">
                     <div class="row">
@@ -101,7 +248,7 @@
         </nav>
 
         <!-- Parte bianca tra contenuto e navbar -->
-        <nav class="navbar fixed-top navbar-expand-lg p-0" style="top: 110px;">
+        <nav class="navbar fixed-top navbar-expand-lg p-0" id="white-space" style="top: 110px;">
             <div class="container-fluid">
                 <div class="container-fluid p-0">
                     <div class="row">

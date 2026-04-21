@@ -4,19 +4,17 @@
 }
 
 body{
-    padding-top: 80px;
-    /* height: 5000px; */
-    /* take font from folder*/
-    font-family: 'Myriad', sans-serif;
+  padding-top: 80px;
+  font-family: 'Myriad', sans-serif;
 }
 
 
 .navbar-red{
-    background-color: #ED002D;
+  background-color: #ED002D;
 }
 
 .navbar-secondary{
-    background-color: #FAFAFA;
+  background-color: #FAFAFA;
 }
 
 /* Hamburger to X animation */
@@ -73,7 +71,7 @@ body{
 }
 
 .btn.is-open {
-  background-color: white !important; /* L'important assicura che vinca sull'hover */
+  background-color: white !important;
   color: red !important;
 }
 
@@ -116,6 +114,13 @@ body{
   color: white;
   background-color: #3D3F40;
   border-color: transparent;
+}
+
+.btn-plus{
+  background-color: transparent;
+  border-color: transparent;
+  margin: 0;
+  padding: 0;
 }
 
 /* Custom "my-dropdownmenu" overlay */
@@ -199,8 +204,31 @@ body{
   white-space: nowrap;
 }
 
+/* Rimuovi animazione offcanvas */
+.offcanvas {
+  transition: none !important;
+}
+
+.my-offcanvas-content{
+  color: #252626;
+  text-decoration: none;
+}
+.my-offcanvas-content:hover{
+  color: #252626;
+  text-decoration: underline;
+}
+
 .my-ul{
   list-style: none;
+}
+
+.my-li{
+  border: solid 1px #ccc;
+  border-bottom: transparent;
+}
+
+.my-li-sottomenu{
+  padding: 15px 10px;
 }
 
 .my-footer{
@@ -230,7 +258,15 @@ body{
 .size-20{
   font-size: 20px;
 }
-
+.size-18{
+  font-size: 18px;
+}
+.size-13{
+  font-size: 13px;
+}
+.size-11{
+  font-size: 11px;
+}
 
 /* Stile base per il contenitore */
 .custom-nav-container {
@@ -242,7 +278,7 @@ body{
     -webkit-overflow-scrolling: touch; /* Rende lo scroll fluido su mobile */
 }
 
-/* Nasconde la scrollbar se vuoi un look più pulito (opzionale) */
+/* Nasconde la scrollbar */
 .custom-nav-container::-webkit-scrollbar {
     display: none;
 }
