@@ -254,19 +254,22 @@ body{
   border-right: none; 
 }
 
+.card-text{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.card-text:hover{
+  text-decoration: underline;
+  text-decoration-color: #A1001F;
+}
 
-.size-20{
-  font-size: 20px;
-}
-.size-18{
-  font-size: 18px;
-}
-.size-13{
-  font-size: 13px;
-}
-.size-11{
-  font-size: 11px;
-}
+
+.size-30{font-size: 30px;}
+.size-20{font-size: 20px;}
+.size-18{font-size: 18px;}
+.size-13{font-size: 13px;}
+.size-11{font-size: 11px;}
 
 /* Stile base per il contenitore */
 .custom-nav-container {
