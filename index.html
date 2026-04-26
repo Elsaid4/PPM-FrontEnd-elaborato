@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Daily Record</title>
+    <link rel="icon" type="image/x-icon" href="Data/Images/Logo-Tab.webp">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>  
+    <!-- skip to content -->
+    <a class="skip-to-content" href="#main-content">Skip to main content</a>
+
     <header>
+        <h1 class="visually-hidden">Daily Record - Navigation bar</h1>
         <!-- Navbar principale -->
         <nav class="navbar fixed-top navbar-expand-lg p-0 navbar-red">
             <div class="container-fluid">
@@ -25,16 +30,16 @@
                                 </li>
                                 <li>
                                     <a class="navbar-brand" href="#">
-                                        <img src="Data/Images/logo-dailyrecord.png" width="160" height="80" alt="Logo" >
+                                        <img src="Data/Images/logo-dailyrecord.png" width="160" height="80" alt="Daily Record Home Page" >
                                     </a>
                                 </li>
                                 <li class="ms-auto">
                                     <a class="navbar-brand" href="#">
-                                        <img src="Data/Images/premium-subscribe-dailyrecord.svg" width="150" height="48.45" alt="Subscribe">
+                                        <img src="Data/Images/premium-subscribe-dailyrecord.svg" width="150" height="48.45" alt="Subscribe to premium">
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="navbar-brand" href="#" aria-label="Profilo">
+                                    <a class="navbar-brand" href="#" aria-label="Open profile">
                                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path opacity=".1" d="M24.7499 24.7499H15.2499C12.3813 24.7499 9.95815 26.6571 9.1792 29.2726C11.7927 32.3196 15.6709 34.25 19.9999 34.25C24.329 34.25 28.2072 32.3196 30.8207 29.2726C30.0417 26.6571 27.6185 24.7499 24.7499 24.7499Z" fill="white"></path>
                                             <path d="M34.25 20C34.25 22.9401 33.3596 25.6723 31.8337 27.9415C29.2751 31.7465 24.9299 34.25 20 34.25C15.0701 34.25 10.7249 31.7465 8.16631 27.9415C6.64042 25.6723 5.75 22.9401 5.75 20C5.75 12.1299 12.1299 5.75 20 5.75C27.8701 5.75 34.25 12.1299 34.25 20Z" stroke="white" stroke-width="3.16667"></path>
@@ -49,7 +54,9 @@
                             <div class="d-none d-lg-flex justify-content-between">
                                 <ul class="navbar-nav d-flex">
                                     <li class="nav-item d-none d-lg-block me-4">
-                                        <img src="Data/Images/logo-dailyrecord.png" width="160" height="80" alt="Logo">
+                                        <a class="navbar-brand" href="#">
+                                            <img src="Data/Images/logo-dailyrecord.png" width="160" height="80" alt="Daily Record Home Page" >
+                                        </a>
                                     </li>
                                     <li class="nav-item">
                                         <button class="btn" aria-current="page" href="#">NEWS</button>
@@ -73,11 +80,11 @@
                                 <ul class="navbar-nav ml-auto d-flex align-items-center d-md-none d-lg-flex">
                                     <li>
                                         <a class="navbar-brand" href="#">
-                                            <img src="Data/Images/premium-subscribe-dailyrecord.svg" width="150" height="48.45" alt="Subscribe">
+                                            <img src="Data/Images/premium-subscribe-dailyrecord.svg" width="150" height="48.45" alt="Subscribe to premium">
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="navbar-brand" href="#" aria-label="Profilo">
+                                        <a class="navbar-brand" href="#" aria-label="Open profile">
                                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path opacity=".1" d="M24.7499 24.7499H15.2499C12.3813 24.7499 9.95815 26.6571 9.1792 29.2726C11.7927 32.3196 15.6709 34.25 19.9999 34.25C24.329 34.25 28.2072 32.3196 30.8207 29.2726C30.0417 26.6571 27.6185 24.7499 24.7499 24.7499Z" fill="white"></path>
                                                 <path d="M34.25 20C34.25 22.9401 33.3596 25.6723 31.8337 27.9415C29.2751 31.7465 24.9299 34.25 20 34.25C15.0701 34.25 10.7249 31.7465 8.16631 27.9415C6.64042 25.6723 5.75 22.9401 5.75 20C5.75 12.1299 12.1299 5.75 20 5.75C27.8701 5.75 34.25 12.1299 34.25 20Z" stroke="white" stroke-width="3.16667"></path>
@@ -261,6 +268,7 @@
 
     <!-- Dropdown menu per opzioni aggiuntive -->
     <div class="container-fluid fixed-top" style="top: 80px; z-index: 9999;">
+        <h1 class="visually-hidden">More</h1>
         <div class="row"> 
             <div class="col-xl-2"></div>
             <div class="col-xl-8 col-lg-12 my-dropdown-col">
@@ -370,7 +378,8 @@
     </div>
 
 
-    <main class="container-fluid mt-5">
+    <main class="container-fluid mt-5" id="main-content">
+        <h1 class="visually-hidden">Daily Record - Homepage</h1>
         <div class="row">
             <div class="col-xl-2" style="border-right: 1px solid #D4D5D5; position: relative; min-height: 100%;"></div>
             <div class="col-xl-8 col-lg-11 col-md-11 col-sm-12 mt-3 custom-content-area" style="padding: 0px 20px 20px 20px;">
@@ -378,7 +387,7 @@
                     <article>
                         <div class="card" style="width: 100%;">
                             <a class="card-text size-30" href="#">
-                                <img src="Data/Images/600x250.svg" class="card-img-top" alt="...">
+                                <img src="Data/Images/600x250.svg" class="card-img-top" alt="">
                                 <div class="card-body">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas enim magnam dicta
                                 </div>
@@ -391,7 +400,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -401,7 +410,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -411,7 +420,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -421,7 +430,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -433,13 +442,13 @@
                 </section>
                 
                 <section>
-                    <a href="#" class="sec-link">NEWS<svg width="40" height="40" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-90deg);" data-testid="arrow-head-icon" id=""><g clip-path="url(#clip0_7405_3605)"><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></a>
+                    <a href="#" style="text-decoration: none;"><h2 class="sec-link">NEWS<svg width="40" height="40" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-90deg);" data-testid="arrow-head-icon" id=""><g clip-path="url(#clip0_7405_3605)"><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></h2></a>
                     <article>
                         <div class="row row-cols-1 row-cols-md-2 g-4">
                             <div class="col">
                                 <div class="card p-3">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -447,7 +456,7 @@
                                 </div>
                                 <div class="card p-3">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -462,7 +471,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -470,25 +479,7 @@
                                 </div>
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card">
-                                    <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -498,7 +489,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -506,7 +497,7 @@
                                 </div>
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -516,7 +507,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -524,7 +515,25 @@
                                 </div>
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <a class="card-text size-20" href="#">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card">
+                                    <a class="card-text size-20" href="#">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -536,12 +545,12 @@
                 </section>
 
                 <section>
-                    <a href="#" class="sec-link">SPORT<svg width="40" height="40" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-90deg);" data-testid="arrow-head-icon" id=""><g clip-path="url(#clip0_7405_3605)"><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></a>
+                    <a href="#" style="text-decoration: none;"><h2 class="sec-link">SPORT<svg width="40" height="40" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-90deg);" data-testid="arrow-head-icon" id=""><g clip-path="url(#clip0_7405_3605)"><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></h2></a>
                     <article>
                         <div class="card-group">
                             <div class="card p-3">
                                 <a class="card-text size-20" href="#">
-                                    <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                    <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                     <div class="card-body">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     </div>
@@ -549,7 +558,7 @@
                             </div>
                             <div class="card p-3">
                                 <a class="card-text size-20" href="#">
-                                    <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                    <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                     <div class="card-body">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     </div>
@@ -563,7 +572,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -571,25 +580,7 @@
                                 </div>
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card">
-                                    <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -599,7 +590,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -607,7 +598,7 @@
                                 </div>
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -617,7 +608,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -625,7 +616,25 @@
                                 </div>
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <a class="card-text size-20" href="#">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card">
+                                    <a class="card-text size-20" href="#">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -637,10 +646,10 @@
                 </section>
 
                 <section>
-                    <a href="#" class="sec-link">POLITICS<svg width="40" height="40" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-90deg);" data-testid="arrow-head-icon" id=""><g clip-path="url(#clip0_7405_3605)"><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></a>
+                    <a href="#" style="text-decoration: none;"><h2 class="sec-link">POLITICS<svg width="40" height="40" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-90deg);" data-testid="arrow-head-icon" id=""><g clip-path="url(#clip0_7405_3605)"><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></h2></a>
                     <article>
                         <div class="card" style="width: 100%;">
-                            <img src="Data/Images/600x250.svg" class="card-img-top" alt="...">
+                            <img src="Data/Images/600x250.svg" class="card-img-top" alt="">
                             <div class="card-body">
                                 <a class="card-text size-30" href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas enim magnam dicta </a>
                             </div>
@@ -653,7 +662,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -663,7 +672,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -673,7 +682,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -683,7 +692,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -695,12 +704,14 @@
                 </section>
 
                 <section>
-                    <a href="#" class="sec-link">LIFESTYLE<svg width="40" height="40" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-90deg);" data-testid="arrow-head-icon" id=""><g clip-path="url(#clip0_7405_3605)"><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></a>
+                    <a href="#" style="text-decoration: none;">
+                        <h2 class="sec-link">LIFESTYLE<svg width="40" height="40" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-90deg);" data-testid="arrow-head-icon" id=""><g clip-path="url(#clip0_7405_3605)"><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></h2>
+                    </a>
                     <article>
                         <div class="card-group">
                             <div class="card p-3">
                                 <a class="card-text size-20" href="#">
-                                    <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                    <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                     <div class="card-body">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     </div>
@@ -708,7 +719,7 @@
                             </div>
                             <div class="card p-3">
                                 <a class="card-text size-20" href="#">
-                                    <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                    <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                     <div class="card-body">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     </div>
@@ -723,7 +734,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -731,25 +742,7 @@
                                 </div>
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card">
-                                    <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -759,7 +752,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -767,7 +760,7 @@
                                 </div>
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -777,7 +770,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -785,7 +778,25 @@
                                 </div>
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <a class="card-text size-20" href="#">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card">
+                                    <a class="card-text size-20" href="#">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -797,10 +808,12 @@
                 </section>
 
                 <section>
-                    <a href="#" class="sec-link">MONEY<svg width="40" height="40" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-90deg);" data-testid="arrow-head-icon" id=""><g clip-path="url(#clip0_7405_3605)"><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></a>
+                    <a href="#" style="text-decoration: none;">
+                        <h2 class="sec-link">MONEY<svg width="40" height="40" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-90deg);" data-testid="arrow-head-icon" id=""><g clip-path="url(#clip0_7405_3605)"><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></h2>
+                    </a>
                     <article>
                         <div class="card" style="width: 100%;">
-                            <img src="Data/Images/600x250.svg" class="card-img-top" alt="...">
+                            <img src="Data/Images/600x250.svg" class="card-img-top" alt="">
                             <div class="card-body">
                                 <a class="card-text size-30" href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas enim magnam dicta </a>
                             </div>
@@ -812,7 +825,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -822,7 +835,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -832,7 +845,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -842,7 +855,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -854,13 +867,15 @@
                 </section>
 
                 <section>
-                    <a href="#" class="sec-link">TV & CELEBS<svg width="40" height="40" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-90deg);" data-testid="arrow-head-icon" id=""><g clip-path="url(#clip0_7405_3605)"><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></a>
+                    <a href="#" style="text-decoration: none;">
+                        <h2 class="sec-link">TV & CELEBS<svg width="40" height="40" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-90deg);" data-testid="arrow-head-icon" id=""><g clip-path="url(#clip0_7405_3605)"><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></h2>
+                    </a>
                     <article>
                         <div class="row row-cols-1 row-cols-md-4 row-cols-lg-4">
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -868,25 +883,7 @@
                                 </div>
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card">
-                                    <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -896,7 +893,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -904,7 +901,7 @@
                                 </div>
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -914,7 +911,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -922,7 +919,25 @@
                                 </div>
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <a class="card-text size-20" href="#">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card">
+                                    <a class="card-text size-20" href="#">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -934,10 +949,12 @@
                 </section>
 
                 <section>
-                    <a href="#" class="sec-link">UK & WORLD NEWS<svg width="40" height="40" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-90deg);" data-testid="arrow-head-icon" id=""><g clip-path="url(#clip0_7405_3605)"><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></a>
+                    <a href="#" style="text-decoration: none;">
+                        <h2 class="sec-link">UK & WORLD NEWS<svg width="40" height="40" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-90deg);" data-testid="arrow-head-icon" id=""><g clip-path="url(#clip0_7405_3605)"><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></h2>
+                    </a>
                     <article>
                         <div class="card" style="width: 100%;">
-                            <img src="Data/Images/600x250.svg" class="card-img-top" alt="...">
+                            <img src="Data/Images/600x250.svg" class="card-img-top" alt="">
                             <div class="card-body">
                                 <a class="card-text size-30" href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas enim magnam dicta </a>
                             </div>
@@ -949,7 +966,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -959,7 +976,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -969,7 +986,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -979,7 +996,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -991,13 +1008,15 @@
                 </section>
                 
                 <section>
-                    <a href="#" class="sec-link">SHOPPING<svg width="40" height="40" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-90deg);" data-testid="arrow-head-icon" id=""><g clip-path="url(#clip0_7405_3605)"><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></a>
+                    <a href="#" style="text-decoration: none;">
+                        <h2 class="sec-link">SHOPPING<svg width="40" height="40" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-90deg);" data-testid="arrow-head-icon" id=""><g clip-path="url(#clip0_7405_3605)"><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></h2>
+                    </a>
                     <article>
                         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -1007,7 +1026,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -1017,7 +1036,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -1027,7 +1046,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -1039,13 +1058,15 @@
                 </section>
 
                 <section>
-                    <a href="#" class="sec-link" style="color: black;">RECENT NEWS</a>
+                    <a href="#" style="text-decoration: none;">
+                        <h2 class="sec-link" style="color:black;">RECENT NEWS</h2>
+                    </a>
                     <article>
                         <div class="row row-cols-1 row-cols-md-4 row-cols-lg-4">
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -1053,25 +1074,7 @@
                                 </div>
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card">
-                                    <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -1081,7 +1084,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -1089,7 +1092,7 @@
                                 </div>
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -1099,7 +1102,7 @@
                             <div class="col">
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -1107,7 +1110,25 @@
                                 </div>
                                 <div class="card">
                                     <a class="card-text size-20" href="#">
-                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="...">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <a class="card-text size-20" href="#">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card">
+                                    <a class="card-text size-20" href="#">
+                                        <img src="Data/Images/600x400.svg" class="card-img-top" alt="">
                                         <div class="card-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </div>
@@ -1121,11 +1142,10 @@
             <div class="col-xl-2 col-lg-1" style="border-left: 1px solid #D4D5D5; position: relative;"></div>
         </div>
     </main>
-    
-
 
 
     <footer>
+        <h1 class="visually-hidden">Daily Record - Footer</h1>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xl-2"></div>
